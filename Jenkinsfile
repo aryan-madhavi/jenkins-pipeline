@@ -9,9 +9,7 @@ pipeline {
             authtype: 'pam',
             clientInterface: runner(
               function: 'state.orchestrate',
-              arguments: 'orch.nginx',
-              blockbuild: true,
-              jobPollTime: 6
+              arguments: 'orch.nginx'
             ),
             credentialsId: 'saltuser-creds',
             saveFile: true,
