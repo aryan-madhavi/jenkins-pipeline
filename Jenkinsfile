@@ -31,7 +31,7 @@ pipeline {
           authtype: 'pam',
           clientInterface: local(
             function: 'state.apply',
-            arguments: 'nginx-start',
+            arguments: 'nginx-start-jenkins',
             blockbuild: true,
             jobPollTime: 6,
             target: '*',
