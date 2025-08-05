@@ -21,8 +21,7 @@ pipeline {
 
         script {
           def output = readFile "${env.WORKSPACE}/saltOutput.json"
-          def json = new groovy.json.JsonSlurper().parseText(output)
-          echo groovy.json.JsonOutput.toJson(json)
+          echo output
         }
       }
     }
@@ -45,8 +44,7 @@ pipeline {
 
         script {
           def output = readFile "${env.WORKSPACE}/saltOutput.json"
-          def json = new groovy.json.JsonSlurper().parseText(output)
-          echo groovy.json.JsonOutput.toJson(json)
+          echo output
         }
       }
     }
