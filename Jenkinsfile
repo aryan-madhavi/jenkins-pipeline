@@ -10,7 +10,7 @@ pipeline {
             function: 'state.apply',
             arguments: [
               'nginx-jenkins',
-              'nginx-start-jenkins',
+              'nginx-start',
             ],
             blockbuild: true,
             jobPollTime: 6,
