@@ -16,7 +16,7 @@ pipeline {
           ),
           credentialsId: 'saltuser-creds',
           saveFile: true,
-          servername: 'http://172.31.6.109:8080'
+          servername: 'http://172.31.32.34:8080'
         )
 
         script {
@@ -39,7 +39,7 @@ pipeline {
           ),
           credentialsId: 'saltuser-creds',
           saveFile: true,
-          servername: 'http://172.31.6.109:8080'
+          servername: 'http://172.31.32.34:8080'
         )
 
         script {
