@@ -8,7 +8,7 @@ pipeline {
           authtype: 'pam',
           clientInterface: local(
             function: 'state.apply',
-            arguments: 'files_mgmt',
+            arguments: 'nginx-jenkins',
             blockbuild: true,
             jobPollTime: 6,
             target: '*',
@@ -32,7 +32,7 @@ pipeline {
           authtype: 'pam',
           clientInterface: local(
             function: 'state.apply',
-            arguments: 'nginx',
+            arguments: 'nginx-start-jenkins',
             blockbuild: true,
             jobPollTime: 6,
             target: '*',
